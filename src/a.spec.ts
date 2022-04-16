@@ -1,3 +1,3 @@
 export class Test {
-  a (): void {}
+  a(): void {}
 }
