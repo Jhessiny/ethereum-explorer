@@ -1,3 +1,5 @@
-export class Test {
-  a(): void {}
-}
+describe('', () => {
+  it('Oi', () => {
+    expect(1).toBe(1)
+  })
+})
