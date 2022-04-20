@@ -1,8 +1,8 @@
-import { HttpPostClient } from '@/data/protocols/http/http-post-client'
+import { HttpGetClient } from '@/data/protocols/http/http-get-client'
 
 export class RemoteLoadBlockchainData {
-  constructor (private readonly url: string, private readonly httpPostClient: HttpPostClient) {}
+  constructor (private readonly url: string, private readonly httpGetClient: HttpGetClient) {}
   async load (): Promise<void> {
-    await this.httpPostClient.post({ url: this.url })
+    await this.httpGetClient.post({ url: this.url })
   }
 }
