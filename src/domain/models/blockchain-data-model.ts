@@ -1,12 +1,4 @@
-type Transaction = {
-  hash: string
-  confirmations: number
-  from: string
-  gasPrice: number
-  to: string
-  value: number
-  timestamp: number
-}
+import { Transaction } from './transactions-model'
 
 export type Address = {
   hash: string
